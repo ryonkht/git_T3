@@ -1,3 +1,4 @@
+// hierarchical model a[pref] b[pref] c[pref]
 data {
   int N;
   real A[N]; //
