@@ -1,4 +1,4 @@
-// hierarchical model temp a[pref] b[pref] c[pref]
+// hierarchical model temp a[temp+pref] b[pref] c[pref]
 data {
   int N;
   real A[N]; //
