@@ -4,6 +4,7 @@ data {
   real A[N]; //
   real S[N];
   real T[N];
+  // vector[N] T;
   int R[N];
   int N_R;
   int N_Anew;
@@ -15,10 +16,13 @@ data {
 parameters {
   real a;
   real a_r[N_R];
+  // real<lower=-5, upper=5> a;
+  // row_vector<lower=-2.5, upper=2.5>[N_R] a_r;
   real<lower=0> b_r[N_R];
   real<lower=0> c_r[N_R];
   real<lower=0, upper=1> b;
   real<lower=0> c;
+  // real<lower=max(-(T*a_r))> d;
   real<lower=0> d;
   real<lower=0> s_a;
   real<lower=0> s_b;
