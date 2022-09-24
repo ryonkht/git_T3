@@ -48,6 +48,10 @@ model {
   for (n in 1:N) {
     S[n] ~ gamma(alpha[n], beta);
   }
+  
+  // prior distribution
+  d ~ normal(100, 20);
+
 }
 
 generated quantities {
